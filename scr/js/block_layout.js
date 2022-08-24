@@ -1,3 +1,4 @@
+import { templateEngine } from "./template";
 function renderExampleDiv({ container, cls, content }) {
     const div = {
         tag: 'div',
@@ -224,7 +225,7 @@ function average() {
 function difficult() {
     return createCards(9)
 }
-function renderScreen() {
+export function renderScreen() {
     for (let i = 0; i < window.application.timers.length; i++) {
         clearInterval(window.application.timers[i])
     }

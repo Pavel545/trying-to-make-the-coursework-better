@@ -5,6 +5,7 @@ document.body.append(main)
 const app = document.querySelector('.app')
 let sec = 0
 let min = 0
+import { renderScreen } from "./block_layout";
 function newGame() {
     renderScreen()
     sec = 0
