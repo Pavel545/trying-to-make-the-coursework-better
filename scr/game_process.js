@@ -102,7 +102,7 @@ function progressGame() {
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
@@ -111,16 +111,16 @@ function progressGame() {
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
-            if (countersWin === 18 && window.complexity === 'difficult') {
+            if (countersWin > 17 && window.complexity === 'difficult') {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
@@ -139,7 +139,7 @@ function loser() {
         return
     })
 }
-function Win() {
+function win() {
     window.application.renderScreen('gameWin')
     const popUpScreen = app.querySelector('.popUpScreen')
     const butter = popUpScreen.querySelector('.head_button')

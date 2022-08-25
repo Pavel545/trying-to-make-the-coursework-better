@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./scr/js/style/style.css":
-/*!**********************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./scr/js/style/style.css ***!
-  \**********************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./scr/style/style.css":
+/*!*******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./scr/style/style.css ***!
+  \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12,16 +12,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* stylelint-disable no-descending-specificity */\n/* stylelint-disable font-family-no-missing-generic-family-keyword */\n/* stylelint-disable selector-class-pattern */\n/* stylelint-disable declaration-block-no-duplicate-properties */\n@charset \"UTF-8\";\n\n.main {\n    height: 774px;\n    background: #004980;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.complexity {\n    color: c2f5ff;\n    width: 480px;\n    height: 459px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n    flex-direction: column;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.complexity_text {\n    width: 208px;\n    left: 408px;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 40px;\n    line-height: 48px;\n    text-align: center;\n    color: #004980;\n}\n\n.complexity_button {\n    width: 246px;\n    height: 50px;\n    background: #7ac100;\n    border-radius: 12px;\n    color: #fff;\n}\n\n.complexity_choice_area {\n    display: box;\n    display: flexbox;\n    display: flex;\n    gap: 24px;\n    padding-bottom: 67px;\n}\n\n.complexity_choice_area:not(:checked) > div {\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    color: #0080c1;\n    background: #fff;\n    border-radius: 12px;\n    width: 98px;\n    height: 98px;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    text-align: center;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    cursor: pointer;\n}\n\n.complexity_choice_area:not(:checked) > div:hover {\n    color: #7ac100;\n    text-shadow: 1px 1px #7ac100;\n}\n\n.complexity_choice_area:not(:checked) > div:checked {\n    background: #7ac100;\n    text-shadow: 1px 1px #7ac100;\n}\n\n.startGame {\n    width: 1024px;\n    height: 774px;\n    background: #004980;\n}\n\n.head {\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    padding: 22px;\n}\n\n.head_button {\n    width: 246px;\n    height: 50px;\n    background: #7ac100;\n    border-radius: 12px;\n    color: #fff;\n}\n\n.head_timer {\n    font-family: StratosSkyeng;\n    width: 155px;\n    height: 91px;\n    left: 22px;\n    top: 22px;\n    color: #fff;\n}\n\n.head_timer_box {\n    display: box;\n    display: flexbox;\n    display: flex;\n}\n\n.head_timer_type {\n    font-style: normal;\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 32px;\n    color: #fff;\n    padding-left: 44px;\n}\n\n.head_timer_counter {\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    color: #fff;\n}\n\n.deck {\n    display: box;\n    display: flexbox;\n    display: flex;\n    gap: 15px;\n    flex-wrap: wrap;\n    flex-wrap: wrap;\n    padding: 24px;\n}\n\n.deck_cards_shirt {\n    width: 95px;\n    height: 133px;\n    background: #e4fbff;\n    border-radius: 4px;\n}\n\n.overlay {\n    background-color: rgb(1 0 0 / 77%);\n    right: 0;\n    left: 0;\n    position: fixed;\n    top: 0;\n    bottom: 0;\n    z-index: 11;\n\n    /* Появление модального окошка с верхнего края экрана */\n}\n\n.overlay:target + .popUpScreen {\n    transform: translate(-50%, 0);\n    transform: translate(-50%, 0);\n    top: 17%;\n}\n\n.popUpScreen {\n    position: absolute;\n    width: 480px;\n    height: 459px;\n    left: 272px;\n    top: 158px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    box-shadow: 0 13px 21px rgb(0 1 0 / 19%), 0 21px 63px rgb(0 1 0 / 31%);\n    box-shadow: 0 13px 21px rgb(0 1 0 / 19%), 0 21px 63px rgb(0 1 0 / 31%);\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n    flex-direction: column;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.popUpScreen_result {\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 40px;\n    line-height: 48px;\n    color: #004980;\n    font-feature-settings: 'pnum' on, 'lnum' on;\n    font-feature-settings: 'pnum' on, 'lnum' on;\n}\n\n.popUpScreen_img_lost {\n    left: 0.4%;\n    right: 0%;\n    top: 0%;\n    bottom: 0.4%;\n    padding-top: 9px;\n}\n\n.popUpScreen_time {\n    padding-top: 28px;\n}\n\n.popUpScreen_time_counter {\n    padding-top: 10px;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    padding-bottom: 40px;\n}\n\n/*# sourceMappingURL=style.css.map */\n", "",{"version":3,"sources":["webpack://./scr/js/style/style.css","webpack://./scr/js/style/style.sass"],"names":[],"mappings":"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","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* stylelint-disable prettier/prettier */\n/* stylelint-disable no-descending-specificity */\n/* stylelint-disable font-family-no-missing-generic-family-keyword */\n/* stylelint-disable selector-class-pattern */\n/* stylelint-disable declaration-block-no-duplicate-properties */\n@charset \"UTF-8\";\n\n.main {\n    height: 774px;\n    background: #004980;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.complexity {\n    color: c2f5ff;\n    width: 480px;\n    height: 459px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n    flex-direction: column;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.complexity_text {\n    width: 208px;\n    left: 408px;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 40px;\n    line-height: 48px;\n    text-align: center;\n    color: #004980;\n}\n\n.complexity_button {\n    width: 246px;\n    height: 50px;\n    background: #7ac100;\n    border-radius: 12px;\n    color: #fff;\n}\n\n.complexity_choice_area {\n    display: box;\n    display: flexbox;\n    display: flex;\n    gap: 24px;\n    padding-bottom: 67px;\n}\n\n.complexity_choice_area:not(:checked) > div {\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    color: #0080c1;\n    background: #fff;\n    border-radius: 12px;\n    width: 98px;\n    height: 98px;\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    text-align: center;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    cursor: pointer;\n}\n\n.complexity_choice_area:not(:checked) > div:hover {\n    color: #7ac100;\n    text-shadow: 1px 1px #7ac100;\n}\n\n.complexity_choice_area:not(:checked) > div:checked {\n    background: #7ac100;\n    text-shadow: 1px 1px #7ac100;\n}\n\n.startGame {\n    width: 1024px;\n    height: 774px;\n    background: #004980;\n}\n\n.head {\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    padding: 22px;\n}\n\n.head_button {\n    width: 246px;\n    height: 50px;\n    background: #7ac100;\n    border-radius: 12px;\n    color: #fff;\n}\n\n.head_timer {\n    font-family: StratosSkyeng;\n    width: 155px;\n    height: 91px;\n    left: 22px;\n    top: 22px;\n    color: #fff;\n}\n\n.head_timer_box {\n    display: box;\n    display: flexbox;\n    display: flex;\n}\n\n.head_timer_type {\n    font-style: normal;\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 32px;\n    color: #fff;\n    padding-left: 44px;\n}\n\n.head_timer_counter {\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    color: #fff;\n}\n\n.deck {\n    display: box;\n    display: flexbox;\n    display: flex;\n    gap: 15px;\n    flex-wrap: wrap;\n    flex-wrap: wrap;\n    padding: 24px;\n}\n\n.deck_cards_shirt {\n    width: 95px;\n    height: 133px;\n    background: #e4fbff;\n    border-radius: 4px;\n}\n\n.overlay {\n    background-color: rgb(1 0 0 / 77%);\n    right: 0;\n    left: 0;\n    position: fixed;\n    top: 0;\n    bottom: 0;\n    z-index: 11;\n\n    /* Появление модального окошка с верхнего края экрана */\n}\n\n.overlay:target + .popUpScreen {\n    transform: translate(-50%, 0);\n    transform: translate(-50%, 0);\n    top: 17%;\n}\n\n.popUpScreen {\n    position: absolute;\n    width: 480px;\n    height: 459px;\n    left: 272px;\n    top: 158px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    box-shadow: 0 13px 21px rgb(0 1 0 / 19%),\n        0 21px 63px rgb(0 1 0 / 31%);\n    box-shadow: 0 13px 21px rgb(0 1 0 / 19%), 0 21px 63px rgb(0 1 0 / 31%);\n    display: box;\n    display: flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n    flex-direction: column;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n}\n\n.popUpScreen_result {\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 40px;\n    line-height: 48px;\n    color: #004980;\n    font-feature-settings: 'pnum' on, 'lnum' on;\n    font-feature-settings: 'pnum' on, 'lnum' on;\n}\n\n.popUpScreen_img_lost {\n    left: 0.4%;\n    right: 0%;\n    top: 0%;\n    bottom: 0.4%;\n    padding-top: 9px;\n}\n\n.popUpScreen_time {\n    padding-top: 28px;\n}\n\n.popUpScreen_time_counter {\n    padding-top: 10px;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 64px;\n    line-height: 72px;\n    padding-bottom: 40px;\n}\n\n/*# sourceMappingURL=style.css.map */\n", "",{"version":3,"sources":["webpack://./scr/style/style.css","webpack://./scr/style/style.sass"],"names":[],"mappings":"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","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -172,10 +172,10 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./scr/js/style/style.css":
-/*!********************************!*\
-  !*** ./scr/js/style/style.css ***!
-  \********************************/
+/***/ "./scr/style/style.css":
+/*!*****************************!*\
+  !*** ./scr/style/style.css ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -183,19 +183,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./scr/js/style/style.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./scr/style/style.css");
 
       
       
@@ -539,10 +539,10 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./scr/js/application.js":
-/*!*******************************!*\
-  !*** ./scr/js/application.js ***!
-  \*******************************/
+/***/ "./scr/application.js":
+/*!****************************!*\
+  !*** ./scr/application.js ***!
+  \****************************/
 /***/ (() => {
 
 window.complexity = ''
@@ -568,18 +568,12 @@ window.time = '00:00'
 
 /***/ }),
 
-/***/ "./scr/js/block_layout.js":
-/*!********************************!*\
-  !*** ./scr/js/block_layout.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./scr/block_layout.js":
+/*!*****************************!*\
+  !*** ./scr/block_layout.js ***!
+  \*****************************/
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "renderScreen": () => (/* binding */ renderScreen)
-/* harmony export */ });
-/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./template */ "./scr/js/template.js");
 
 function renderExampleDiv({ container, cls, content }) {
     const div = {
@@ -587,7 +581,7 @@ function renderExampleDiv({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__.templateEngine)(div))
+    container.appendChild(templateEngine(div))
 }
 window.application.blocks['example-div'] = renderExampleDiv
 function renderExampleButtonFalse({ container, cls, content, id }) {
@@ -599,7 +593,7 @@ function renderExampleButtonFalse({ container, cls, content, id }) {
             id,
         },
     }
-    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__.templateEngine)(div))
+    container.appendChild(templateEngine(div))
 }
 window.application.blocks['example-false'] = renderExampleButtonFalse
 function renderExampleButton({ container, cls, content }) {
@@ -608,7 +602,7 @@ function renderExampleButton({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__.templateEngine)(button))
+    container.appendChild(templateEngine(button))
 }
 window.application.blocks['example-button'] = renderExampleButton
 
@@ -675,7 +669,7 @@ function renderExampleImg({ container, cls, id, src }) {
             src: src,
         },
     }
-    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__.templateEngine)(img))
+    container.appendChild(templateEngine(img))
 }
 window.application.blocks['example-img'] = renderExampleImg
 
@@ -818,7 +812,7 @@ function renderExampleAlink({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__.templateEngine)(a))
+    container.appendChild(templateEngine(a))
 }
 window.application.blocks['example-link'] = renderExampleAlink
 
@@ -910,15 +904,12 @@ window.application.screens['gameWin'] = renderExampleScreenWin
 
 /***/ }),
 
-/***/ "./scr/js/game_process.js":
-/*!********************************!*\
-  !*** ./scr/js/game_process.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./scr/game_process.js":
+/*!*****************************!*\
+  !*** ./scr/game_process.js ***!
+  \*****************************/
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _block_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./block_layout */ "./scr/js/block_layout.js");
 const main = document.createElement('div')
 main.className = 'app'
 document.body.append(main)
@@ -926,9 +917,8 @@ document.body.append(main)
 const app = document.querySelector('.app')
 let sec = 0
 let min = 0
-;
 function newGame() {
-    (0,_block_layout__WEBPACK_IMPORTED_MODULE_0__.renderScreen)()
+    renderScreen()
     sec = 0
     min = 0
     window.application.renderScreen('example')
@@ -1011,7 +1001,7 @@ function progressGame() {
                 )
                 window.time = head_timer_counter.textContent
                 loser()
-                ;(0,_block_layout__WEBPACK_IMPORTED_MODULE_0__.renderScreen)()
+                renderScreen()
                 return
             }
 
@@ -1025,7 +1015,7 @@ function progressGame() {
                 )
                 window.time = head_timer_counter.textContent
                 Win()
-                ;(0,_block_layout__WEBPACK_IMPORTED_MODULE_0__.renderScreen)()
+                renderScreen()
                 return
             }
             if (countersWin === 12 && window.complexity === 'average') {
@@ -1034,7 +1024,7 @@ function progressGame() {
                 )
                 window.time = head_timer_counter.textContent
                 Win()
-                ;(0,_block_layout__WEBPACK_IMPORTED_MODULE_0__.renderScreen)()
+                renderScreen()
                 return
             }
             if (countersWin === 18 && window.complexity === 'difficult') {
@@ -1043,7 +1033,7 @@ function progressGame() {
                 )
                 window.time = head_timer_counter.textContent
                 Win()
-                ;(0,_block_layout__WEBPACK_IMPORTED_MODULE_0__.renderScreen)()
+                renderScreen()
                 return
             }
         })
@@ -1076,17 +1066,12 @@ function Win() {
 
 /***/ }),
 
-/***/ "./scr/js/template.js":
-/*!****************************!*\
-  !*** ./scr/js/template.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./scr/template.js":
+/*!*************************!*\
+  !*** ./scr/template.js ***!
+  \*************************/
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "templateEngine": () => (/* binding */ templateEngine)
-/* harmony export */ });
 function templateEngine(block) {
     if (block === undefined || block === null || block === false) {
         return document.createTextNode('')
@@ -1210,16 +1195,19 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!*************************!*\
-  !*** ./scr/js/index.js ***!
-  \*************************/
+/*!**********************!*\
+  !*** ./scr/index.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _application_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./application.js */ "./scr/js/application.js");
+/* harmony import */ var _application_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./application.js */ "./scr/application.js");
 /* harmony import */ var _application_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_application_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _template_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./template.js */ "./scr/js/template.js");
-/* harmony import */ var _block_layout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block_layout.js */ "./scr/js/block_layout.js");
-/* harmony import */ var _game_process_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./game_process.js */ "./scr/js/game_process.js");
-/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/style.css */ "./scr/js/style/style.css");
+/* harmony import */ var _template_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./template.js */ "./scr/template.js");
+/* harmony import */ var _template_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_template_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _block_layout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block_layout.js */ "./scr/block_layout.js");
+/* harmony import */ var _block_layout_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_block_layout_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _game_process_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./game_process.js */ "./scr/game_process.js");
+/* harmony import */ var _game_process_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_game_process_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/style.css */ "./scr/style/style.css");
 
 
 
