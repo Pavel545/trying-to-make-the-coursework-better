@@ -1,6 +1,6 @@
-/* stylelint-disable declaration-block-no-duplicate-properties */
-/* stylelint-disable no-descending-specificity */
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-block-no-duplicate-properties */
 /* stylelint-disable selector-class-pattern */
 @charset "UTF-8";
 
@@ -29,6 +29,7 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -162,6 +163,7 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 24px;
 }
 
@@ -185,6 +187,7 @@
 }
 
 .overlay:target + .popUpScreen {
+    transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     top: 17%;
 }
