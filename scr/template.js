@@ -1,4 +1,4 @@
-export default function templateEngine(block) {
+window.templateEngine = function (block) {
     if (block === undefined || block === null || block === false) {
         return document.createTextNode('')
     }

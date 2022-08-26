@@ -34,6 +34,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        assetModuleFilename: 'scr/static/[name][ext][query]'
     },
     plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin()],
 }
