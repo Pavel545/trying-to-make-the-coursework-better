@@ -1,4 +1,4 @@
-
+import templateEngine from './template'
 function renderExampleDiv({ container, cls, content }) {
     const div = {
         tag: 'div',
@@ -107,7 +107,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: 'scr/js/img/shirt.jpg',
+            src: 'scr/static/shirt.jpg',
         })
     })
 }
@@ -180,7 +180,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: `scr/js/img/${element}.png`,
+            src: `scr/static/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -225,7 +225,7 @@ function average() {
 function difficult() {
     return createCards(9)
 }
-function renderScreen() {
+window.renderScreen = function () {
     for (let i = 0; i < window.application.timers.length; i++) {
         clearInterval(window.application.timers[i])
     }
@@ -258,7 +258,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/loser.png`,
+        src: `scr/static/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -300,7 +300,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/win.png`,
+        src: `scr/static/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,

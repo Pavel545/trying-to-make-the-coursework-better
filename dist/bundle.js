@@ -572,8 +572,11 @@ window.time = '00:00'
 /*!*****************************!*\
   !*** ./scr/block_layout.js ***!
   \*****************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./template */ "./scr/template.js");
 
 function renderExampleDiv({ container, cls, content }) {
     const div = {
@@ -581,7 +584,7 @@ function renderExampleDiv({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild(templateEngine(div))
+    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__["default"])(div))
 }
 window.application.blocks['example-div'] = renderExampleDiv
 function renderExampleButtonFalse({ container, cls, content, id }) {
@@ -593,7 +596,7 @@ function renderExampleButtonFalse({ container, cls, content, id }) {
             id,
         },
     }
-    container.appendChild(templateEngine(div))
+    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__["default"])(div))
 }
 window.application.blocks['example-false'] = renderExampleButtonFalse
 function renderExampleButton({ container, cls, content }) {
@@ -602,7 +605,7 @@ function renderExampleButton({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild(templateEngine(button))
+    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__["default"])(button))
 }
 window.application.blocks['example-button'] = renderExampleButton
 
@@ -669,7 +672,7 @@ function renderExampleImg({ container, cls, id, src }) {
             src: src,
         },
     }
-    container.appendChild(templateEngine(img))
+    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__["default"])(img))
 }
 window.application.blocks['example-img'] = renderExampleImg
 
@@ -683,7 +686,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: 'scr/js/img/shirt.jpg',
+            src: 'scr/static/shirt.jpg',
         })
     })
 }
@@ -756,7 +759,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: `scr/js/img/${element}.png`,
+            src: `scr/static/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -801,7 +804,7 @@ function average() {
 function difficult() {
     return createCards(9)
 }
-function renderScreen() {
+window.renderScreen = function () {
     for (let i = 0; i < window.application.timers.length; i++) {
         clearInterval(window.application.timers[i])
     }
@@ -812,7 +815,7 @@ function renderExampleAlink({ container, cls, content }) {
         cls,
         content,
     }
-    container.appendChild(templateEngine(a))
+    container.appendChild((0,_template__WEBPACK_IMPORTED_MODULE_0__["default"])(a))
 }
 window.application.blocks['example-link'] = renderExampleAlink
 
@@ -834,7 +837,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/loser.png`,
+        src: `scr/static/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -876,7 +879,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/win.png`,
+        src: `scr/static/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -1070,8 +1073,13 @@ function win() {
 /*!*************************!*\
   !*** ./scr/template.js ***!
   \*************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ templateEngine)
+/* harmony export */ });
 function templateEngine(block) {
     if (block === undefined || block === null || block === false) {
         return document.createTextNode('')
@@ -1115,6 +1123,17 @@ function templateEngine(block) {
     return result
 }
 
+
+/***/ }),
+
+/***/ "./scr/static/win.png":
+/*!****************************!*\
+  !*** ./scr/static/win.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "e9a23012fa19ebafb807.png";
 
 /***/ })
 
@@ -1169,6 +1188,18 @@ function templateEngine(block) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -1183,6 +1214,26 @@ function templateEngine(block) {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -1202,12 +1253,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _application_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./application.js */ "./scr/application.js");
 /* harmony import */ var _application_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_application_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _template_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./template.js */ "./scr/template.js");
-/* harmony import */ var _template_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_template_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _block_layout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block_layout.js */ "./scr/block_layout.js");
-/* harmony import */ var _block_layout_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_block_layout_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _game_process_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./game_process.js */ "./scr/game_process.js");
 /* harmony import */ var _game_process_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_game_process_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/style.css */ "./scr/style/style.css");
+/* harmony import */ var _static_win_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./static/win.png */ "./scr/static/win.png");
+
 
 
 

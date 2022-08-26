@@ -4,3 +4,4 @@ import './block_layout.js'
 import './game_process.js'
 import './style/style.css'
 
+import  './static/win.png'
