@@ -7,7 +7,6 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
         "lint:css": "stylelint scr/style/style.css",
-        
         "prepare": "husky install",
         "lint": "npm run lint:css",
         "build": "webpack",

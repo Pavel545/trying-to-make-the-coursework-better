@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
+const CopyPlugin = require("copy-webpack-plugin"); 
+
 module.exports = {
     entry: './scr/index.js',
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -36,5 +38,9 @@ module.exports = {
         filename: 'bundle.js',
         assetModuleFilename: 'scr/static/[name][ext][query]'
     },
-    plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin()],
+    plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin(),new CopyPlugin({
+        patterns: [
+          { from: "scr/static", to: "scr/static" },
+        ],
+    }),],
 }
