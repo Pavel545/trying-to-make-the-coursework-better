@@ -1,4 +1,4 @@
-// import templateEngine from './template'
+import templateEngine from './template'
 function renderExampleDiv({ container, cls, content }) {
     const div = {
         tag: 'div',
