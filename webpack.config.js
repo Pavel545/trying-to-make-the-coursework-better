@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
-const CopyPlugin = require("copy-webpack-plugin"); 
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-    entry: './scr/index.js',
+    entry: './src/index.js',
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     module: {
         rules: [
@@ -36,11 +36,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        assetModuleFilename: 'scr/static/[name][ext][query]'
+        assetModuleFilename: 'src/static/[name][ext][query]',
     },
-    plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin(),new CopyPlugin({
-        patterns: [
-          { from: "scr/static", to: "scr/static" },
-        ],
-    }),],
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin(),
+        new CopyPlugin({
+            patterns: [{ from: 'src/static', to: 'src/static' }],
+        }),
+    ],
 }
