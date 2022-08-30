@@ -107,7 +107,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: 'scr/static/shirt.jpg',
+            src: './src/static/shirt.jpg',
         })
     })
 }
@@ -180,7 +180,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: `scr/static/${element}.png`,
+            src: `./src/static/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -258,7 +258,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/static/loser.png`,
+        src: `./src/static/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -300,7 +300,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/static/win.png`,
+        src: `./src/static/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,

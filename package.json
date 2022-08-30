@@ -6,9 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
-        "lint:sass": "stylelint src/style/style.css",
+        "lint:sass": "stylelint src/style/style.sass",
         "prepare": "husky install",
-        "lint": "npm run lint:sass",
+        "lint": "",
         "build": "webpack",
         "start": "webpack-dev-server --open"
     },
@@ -35,6 +35,8 @@
         "husky": "^8.0.1",
         "mini-css-extract-plugin": "^2.6.1",
         "prettier": "^2.7.1",
+        "sass": "^1.54.6",
+        "sass-loader": "^13.0.2",
         "style-loader": "^3.3.1",
         "stylelint": "^14.11.0",
         "stylelint-config-prettier": "^9.0.3",
