@@ -8,7 +8,7 @@
         "format": "prettier --write .",
         "lint:sass": "stylelint src/style/style.sass",
         "prepare": "husky install",
-        "lint": "",
+        "lint": "npm run lint:sass",
         "build": "webpack",
         "start": "webpack-dev-server --open"
     },
@@ -23,7 +23,8 @@
     },
     "homepage": "https://github.com/Pavel545/trying-to-make-the-coursework-better#readme",
     "dependencies": {
-        "http-server": "^14.1.1"
+        "http-server": "^14.1.1",
+        "postcss-sass": "^0.5.0"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^11.0.0",

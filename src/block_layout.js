@@ -107,7 +107,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: './src/static/shirt.jpg',
+            src: window.static+'/shirt.jpg',
         })
     })
 }
@@ -180,7 +180,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: `./src/static/${element}.png`,
+            src: window.static+`/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -211,9 +211,9 @@ function shuffle(arr) {
 const createCards = (count) => {
     let arr = []
     let counter = 0
-    for (let i = 0; i < 10; i += 9) {
-        for (let j = 0; j < count; j++) {
-            arr[counter] = window.deckID[j + i]
+    for (let i = 1; i < 3; i ++) {
+        for (let j = 6; j < 6+count; j++) {
+            arr[counter] =`${j}.${i}` 
             counter++
         }
     }
@@ -258,7 +258,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `./src/static/loser.png`,
+        src: window.static+`/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -300,7 +300,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `./src/static/win.png`,
+        src: window.static+`/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
