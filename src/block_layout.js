@@ -1,5 +1,6 @@
 import templateEngine from './template'
-const staticFiles = './src/static'
+import {STATIC_FILES} from './constants'
+
 
 function renderExampleDiv({ container, cls, content }) {
     const div = {
@@ -109,7 +110,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: staticFiles + '/shirt.jpg',
+            src: STATIC_FILES + '/shirt.jpg',
         })
     })
 }
@@ -182,7 +183,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: staticFiles + `/${element}.png`,
+            src: STATIC_FILES + `/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -213,10 +214,10 @@ function shuffle(arr) {
 const createCards = (count) => {
     let arr = []
     let counter = 0
-    const step = 6//номер карт начинаются с 6, поэтому нужно немного так сказать отступить от 0
-    const suit=3 //так как с максимальной сложностью карт не более 18 то на вывод карты не более 2х мастей
+    const firstCardRank = 6
+    const suit=3 //так как с максимальной сложностью карт не более 18 то на вывод, более чем достаточно карт 2-х мастей
     for (let i = 1; i < suit; i++) {
-        for (let j = step; j < step + count; j++) {
+        for (let j = firstCardRank; j < firstCardRank + count; j++) {
             arr[counter] = `${j}.${i}`
             counter++
         }
@@ -262,7 +263,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: staticFiles + `/loser.png`,
+        src: STATIC_FILES + `/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -304,7 +305,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: staticFiles + `/win.png`,
+        src: STATIC_FILES + `/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,

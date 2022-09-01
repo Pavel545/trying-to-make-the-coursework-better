@@ -1,0 +1,1 @@
+export const STATIC_FILES  = './src/static';    
