@@ -1,4 +1,6 @@
 import templateEngine from './template'
+const staticFiles = './src/static'
+
 function renderExampleDiv({ container, cls, content }) {
     const div = {
         tag: 'div',
@@ -107,7 +109,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: window.static+'/shirt.jpg',
+            src: staticFiles + '/shirt.jpg',
         })
     })
 }
@@ -180,7 +182,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: window.static+`/${element}.png`,
+            src: staticFiles + `/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -211,9 +213,11 @@ function shuffle(arr) {
 const createCards = (count) => {
     let arr = []
     let counter = 0
-    for (let i = 1; i < 3; i ++) {
-        for (let j = 6; j < 6+count; j++) {
-            arr[counter] =`${j}.${i}` 
+    const step = 6//номер карт начинаются с 6, поэтому нужно немного так сказать отступить от 0
+    const suit=3 //так как с максимальной сложностью карт не более 18 то на вывод карты не более 2х мастей
+    for (let i = 1; i < suit; i++) {
+        for (let j = step; j < step + count; j++) {
+            arr[counter] = `${j}.${i}`
             counter++
         }
     }
@@ -258,7 +262,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: window.static+`/loser.png`,
+        src: staticFiles + `/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -300,7 +304,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: window.static+`/win.png`,
+        src: staticFiles + `/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,

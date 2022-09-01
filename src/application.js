@@ -11,4 +11,3 @@ window.application = {
     timers: [],
 }
 window.time = '00:00'
-window.static = "./src/static"
