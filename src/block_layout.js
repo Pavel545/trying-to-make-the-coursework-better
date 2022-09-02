@@ -1,6 +1,10 @@
 import templateEngine from './template'
-import {STATIC_FILES} from './constants'
-
+import {
+    STATIC_FILES,
+    NUMBER_MATCHES_EASE,
+    NUMBER_MATCHES_AVERAGE,
+    NUMBER_MATCHES_DIFFICULT,
+} from './constants'
 
 function renderExampleDiv({ container, cls, content }) {
     const div = {
@@ -202,7 +206,7 @@ function complexityS(arr) {
     }
 }
 function easy() {
-    return createCards(3)
+    return createCards(NUMBER_MATCHES_EASE/2)
 }
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -215,7 +219,7 @@ const createCards = (count) => {
     let arr = []
     let counter = 0
     const firstCardRank = 6
-    const suit=3 //так как с максимальной сложностью карт не более 18 то на вывод, более чем достаточно карт 2-х мастей
+    const suit = 3 //так как с максимальной сложностью карт не более 18 то на вывод, более чем достаточно карт 2-х мастей
     for (let i = 1; i < suit; i++) {
         for (let j = firstCardRank; j < firstCardRank + count; j++) {
             arr[counter] = `${j}.${i}`
@@ -225,10 +229,10 @@ const createCards = (count) => {
     return shuffle(arr)
 }
 function average() {
-    return createCards(6)
+    return createCards(NUMBER_MATCHES_AVERAGE/2)
 }
 function difficult() {
-    return createCards(9)
+    return createCards(NUMBER_MATCHES_DIFFICULT/2)
 }
 window.renderScreen = function () {
     for (let i = 0; i < window.application.timers.length; i++) {

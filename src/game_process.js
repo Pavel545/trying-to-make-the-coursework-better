@@ -63,9 +63,11 @@ function timer() {
     }
     head_timer_counter.textContent = `${min} :${sec}`
 }
-winDifficult = 18;
-winAverage =12;
-winEasy = 6;
+import {
+    NUMBER_MATCHES_EASE,
+    NUMBER_MATCHES_AVERAGE,
+    NUMBER_MATCHES_DIFFICULT,
+} from './constants'
 function progressGame() {
     const main = app.querySelector('.startGame')
     const deck = main.querySelector('.deck')
@@ -100,7 +102,7 @@ function progressGame() {
             cards[index].src = window.deckT[index].src
             counters++
             countersWin++
-            if (countersWin === winEasy && window.complexity === 'easy') {
+            if (countersWin === NUMBER_MATCHES_EASE && window.complexity === 'easy') {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
@@ -109,7 +111,7 @@ function progressGame() {
                 renderScreen()
                 return
             }
-            if (countersWin === winAverage && window.complexity === 'average') {
+            if (countersWin === NUMBER_MATCHES_AVERAGE && window.complexity === 'average') {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
@@ -118,7 +120,10 @@ function progressGame() {
                 renderScreen()
                 return
             }
-            if (countersWin === winDifficult && window.complexity === 'difficult') {
+            if (
+                countersWin === NUMBER_MATCHES_DIFFICULT &&
+                window.complexity === 'difficult'
+            ) {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )

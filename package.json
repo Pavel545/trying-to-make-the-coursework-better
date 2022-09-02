@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
-        "lint:sass": "stylelint src/style/style.sass",
+        "lint:sass": "stylelint 'src/style/style.scss'",
         "prepare": "husky install",
         "build": "webpack",
         "start": "webpack-dev-server --open"
@@ -22,7 +22,6 @@
     },
     "homepage": "https://github.com/Pavel545/trying-to-make-the-coursework-better#readme",
     "devDependencies": {
-        "postcss-sass": "^0.5.0",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.1",
         "css-minimizer-webpack-plugin": "^4.0.0",
@@ -31,6 +30,7 @@
         "html-webpack-plugin": "^5.5.0",
         "husky": "^8.0.1",
         "mini-css-extract-plugin": "^2.6.1",
+        "postcss-sass": "^0.5.0",
         "prettier": "^2.7.1",
         "sass": "^1.54.6",
         "sass-loader": "^13.0.2",
