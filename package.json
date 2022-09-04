@@ -7,6 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
         "lint:sass": "stylelint 'src/style/style.scss'",
+        "lint:js": "npx eslint src/**.js",
+        "lint": "npm run lint:js     & npm run lint:sass",
         "prepare": "husky install",
         "build": "webpack",
         "start": "webpack-dev-server --open"
@@ -22,10 +24,12 @@
     },
     "homepage": "https://github.com/Pavel545/trying-to-make-the-coursework-better#readme",
     "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.1",
         "css-minimizer-webpack-plugin": "^4.0.0",
         "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-only-warn": "^1.0.3",
         "eslint-plugin-prettier": "^4.2.1",
         "html-webpack-plugin": "^5.5.0",
         "husky": "^8.0.1",
