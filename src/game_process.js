@@ -5,7 +5,6 @@ document.body.append(main)
 const app = document.querySelector('.app')
 let sec = 0
 let min = 0
-import { renderScreen } from "./block_layout";
 function newGame() {
     renderScreen()
     sec = 0
@@ -64,6 +63,14 @@ function timer() {
     }
     head_timer_counter.textContent = `${min} :${sec}`
 }
+import {
+    NUMBER_MATCHES_EASE,
+    NUMBER_MATCHES_AVERAGE,
+    NUMBER_MATCHES_DIFFICULT,
+    EASY,
+    AVERAGE,
+    DIFFICULT,
+} from './constants'
 function progressGame() {
     const main = app.querySelector('.startGame')
     const deck = main.querySelector('.deck')
@@ -98,30 +105,33 @@ function progressGame() {
             cards[index].src = window.deckT[index].src
             counters++
             countersWin++
-            if (countersWin === 6 && window.complexity === 'easy') {
+            if (countersWin === NUMBER_MATCHES_EASE && window.complexity === EASY) {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
-            if (countersWin === 12 && window.complexity === 'average') {
+            if (countersWin === NUMBER_MATCHES_AVERAGE && window.complexity === AVERAGE) {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
-            if (countersWin === 18 && window.complexity === 'difficult') {
+            if (
+                countersWin === NUMBER_MATCHES_DIFFICULT &&
+                window.complexity === DIFFICULT
+            ) {
                 const head_timer_counter = app.querySelector(
                     '.head_timer_counter'
                 )
                 window.time = head_timer_counter.textContent
-                Win()
+                win()
                 renderScreen()
                 return
             }
@@ -140,7 +150,7 @@ function loser() {
         return
     })
 }
-function Win() {
+function win() {
     window.application.renderScreen('gameWin')
     const popUpScreen = app.querySelector('.popUpScreen')
     const butter = popUpScreen.querySelector('.head_button')

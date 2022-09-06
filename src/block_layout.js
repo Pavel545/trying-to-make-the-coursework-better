@@ -1,4 +1,11 @@
-import { templateEngine } from "./template";
+import templateEngine from './template'
+import {
+    STATIC_FILES,
+    NUMBER_MATCHES_EASE,
+    NUMBER_MATCHES_AVERAGE,
+    NUMBER_MATCHES_DIFFICULT,
+} from './constants'
+
 function renderExampleDiv({ container, cls, content }) {
     const div = {
         tag: 'div',
@@ -107,7 +114,7 @@ function renderExampleScreenGameShirt() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: 'scr/js/img/shirt.jpg',
+            src: STATIC_FILES + '/shirt.jpg',
         })
     })
 }
@@ -180,7 +187,7 @@ function renderExampleComplexity() {
             container: deck,
             cls: 'deck_cards_shirt',
             id: arr[index],
-            src: `scr/js/img/${element}.png`,
+            src: STATIC_FILES + `/${element}.png`,
         })
     })
     window.deckT = deck.querySelectorAll('.deck_cards_shirt')
@@ -199,7 +206,7 @@ function complexityS(arr) {
     }
 }
 function easy() {
-    return createCards(3)
+    return createCards(NUMBER_MATCHES_EASE/2)
 }
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -211,21 +218,23 @@ function shuffle(arr) {
 const createCards = (count) => {
     let arr = []
     let counter = 0
-    for (let i = 0; i < 10; i += 9) {
-        for (let j = 0; j < count; j++) {
-            arr[counter] = window.deckID[j + i]
+    const firstCardRank = 6
+    const suit = 3 //так как с максимальной сложностью карт не более 18 то на вывод, более чем достаточно карт 2-х мастей
+    for (let i = 1; i < suit; i++) {
+        for (let j = firstCardRank; j < firstCardRank + count; j++) {
+            arr[counter] = `${j}.${i}`
             counter++
         }
     }
     return shuffle(arr)
 }
 function average() {
-    return createCards(6)
+    return createCards(NUMBER_MATCHES_AVERAGE/2)
 }
 function difficult() {
-    return createCards(9)
+    return createCards(NUMBER_MATCHES_DIFFICULT/2)
 }
-export function renderScreen() {
+window.renderScreen = function () {
     for (let i = 0; i < window.application.timers.length; i++) {
         clearInterval(window.application.timers[i])
     }
@@ -258,7 +267,7 @@ function renderExampleScreenLost() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/loser.png`,
+        src: STATIC_FILES + `/loser.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
@@ -300,7 +309,7 @@ function renderExampleScreenWin() {
         container: popUpScreen,
         cls: 'popUpScreen_img_lost',
         id: 'loser',
-        src: `scr/js/img/win.png`,
+        src: STATIC_FILES + `/win.png`,
     })
     window.application.renderBlock('example-div', {
         container: popUpScreen,
